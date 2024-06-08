@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Botanic Garden</title>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Anli Hu">
+
+    <meta name="robot" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”googlebot” content=”notranslate” />
+
+    <!-- open graph protocol -->
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:img" content="">
+    <meta property="og:url" content="https://">
+    <meta property="og:description" content="">
+    <meta property="site_name" content="Anli Hu">
+    <meta property="locale" content="">
+
+    <!-- reference -->
+    <link rel="icon" href="png">
+    <link rel="icon" href="svg" type="image/svg+xml">
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom styles for bootstraps template -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/project_content.css" rel="stylesheet">
+    <link href="../css/variables.css" rel="stylesheet">
+</head>
+
+<style>
+    :root {
+        /* Overwrite project theme color */
+        --project-theme: #214f3d;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- navigation -->
+        <div class="container" id="content-navigation-container"></div>
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    </header>
+
+    <script src="../js/script.js"></script>
+
+    <main>
+        <div class="contentContainer heading">
+            <div class="heading-position">
+                <h1 class="project-title"> St Andrews Botanic Garden Database Portal</h1>
+            </div>
+            <div class="overview-positition">
+                <p class="project-overview">
+                    A holobiont-style database web portal
+                    <br>
+                    that can mutualize visitors, researchers and managers together.
+                </p>
+            </div>
+        </div>
+        <img class="hero-img" src="../img/projects/botanic_garden/hero_img.png">
+        <div class="section-overview">
+            <div class="contentContainer">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="h1-section-heading">Project Vision</div>
+                        <div class="columns">
+                            <p class="paragraph-light">
+                                This project provides possible solutions for users in a range of formats to access St
+                                Andrews Botanic Garden's database with pertinence and efficiency. With current database
+                                management system our client is using, it has limitations in nearly every aspect and is
+                                extremely outdated for large datasets. Taking holobint as a core concept, our designed
+                                portals aim to provide a platform that can benefit both specialists and the general
+                                public to interact with data.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="h1-section-heading">Challenges</div>
+                        <div class="columns">
+                            <p class="paragraph-light">
+                                1) Design an easy-to-use data processing system
+                                <br>
+                                2) Include a mapping capability to interrogate the database
+                                <br>
+                                3) Consider mobile functionalities to complement the website
+                                <br>
+                                4) Balance advanced capabilities with a user experience suitable for more than just
+                                expert users
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section1-kickoff section-odd">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Kickoff: Visting The Garden</div>
+                <div class="row">
+                    <p class="paragraph-light">
+                        We teamed up together with St Andrews Botanic Garden in their pursuit to refresh the scientific
+                        mission and overall purpose for professionals and visitors alike. However, at the outset of the
+                        project, we didn’t have a clear vision or specific goals about what we gonna build. Without
+                        pre-existing insights, we decided to visit the garden in person to get an idea of what this
+                        garden feels like.
+                        <br><br>
+                        Due to requirements from the university, we could not interview our client in person during the
+                        pandemic. Even so, this visit provided us with a perfect chance to explore the garden as a pure
+                        visitor, allowing us to find out how to work with data and information in the garden.
+                    </p>
+                    <img class="content-img" src="../img/projects/botanic_garden/garden_photo.png">
+                </div>
+            </div>
+        </div>
+        <div class="section2-pain-points section-even">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Findings from The Field. As Visitors We Met...</div>
+                <div class="row row-large-gap">
+                    <div class="col-md-6">
+                        <img class="content-img content-img-shadow"
+                            src="../img/projects/botanic_garden/painpoint_map.png">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="h3-list" style="font-weight: bold;">Confusing Guide Map</h3>
+                        <p class="paragraph-light">
+                            The map uses the same circles and colors to indicate different types of plants, and labels
+                            numbers and legends to mark the approximate location of certain plants.
+                        </p>
+                    </div>
+                </div>
+                <div class="row row-large-gap">
+                    <div class="col-md-6">
+                        <img class="content-img content-img-shadow"
+                            src="../img/projects/botanic_garden/painpoint_explaination.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="h3-list" style="font-weight: bold;">Proper Nouns Without Explaination</h3>
+                        <p class="paragraph-light">
+                            Visitors without any botany background can barely read the name of the plant and learn more
+                            details about it.
+                        </p>
+                    </div>
+                </div>
+                <div class="row row-large-gap">
+                    <div class="col-md-6">
+                        <img class="content-img content-img-shadow"
+                            src="../img/projects/botanic_garden/painpoint_information.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="h3-list" style="font-weight: bold;">Information that Are Not Avaliable</h3>
+                        <p class="paragraph-light">
+                            Every plant has a unique code, while most plants have a label on them. But visitors could
+                            not make use of these to search for relevant information on the garden's website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section3-target-user section-odd">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Know More about Target Users</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="content-img" src="../img/projects/botanic_garden/target_user.png">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="paragraph-light paragraph-light-left">
+                            While enjoying the gorgeous scenery, we also had an outline of the basics of the garden and
+                            the daily routine of the garden staff, which pointed us on the way forward.
+                        </p>
+                        <p class="annotation">
+                            * Due to constraints inflicted by both COVID-19 and the client's consideration, our client
+                            wished he alone would remain the point of contact. Hence, interviews with members of staff
+                            or visitors would be replaced in the form of questionnaires.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-4-reframe-user-pain section-even">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Reframe User Paint Points</div>
+                <div class="row">
+                    <div class="col-md-6" style="margin: auto;">
+                        <p class="emphasise">
+                            "Is there anything you like about the current process?
+                            <br><br>
+                            "NO!"
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="content-img" style="height: 300px;"
+                            src="../img/projects/botanic_garden/mindmap.jpg">
+                    </div>
+                </div>
+                <img class="content-img" src="../img/projects/botanic_garden/pain_with_data.png">
+            </div>
+        </div>
+        <div class="section-5-user-role section-odd">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Define User Goals and Elicitate Insights</div>
+                <img class="content-img" style="padding-bottom: 50px;"
+                    src="../img/projects/botanic_garden/user_goal.png">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="paragraph-light">
+                            We grouped target users into three different user roles. The workflow on the right also
+                            shows how the information passes through different roles inside and outside the Botanic
+                            Garden, aiding us in identifying how the entities within the project system will communicate
+                            and coordinate with each other.
+                        </p>
+                        <h3 class="h3-list">1. Manager</h3>
+                        <p class="paragraph-light">
+                            People are responsible for managing the plants, the science and research associated with
+                            them and looking after the database.
+                        </p>
+                        <h3 class="h3-list">2. General Staff</h3>
+                        <p class="paragraph-light">
+                            People who do not directly amend data in the database but use it in their work and submit
+                            update suggestions through the portal.
+                        </p>
+                        <h3 class="h3-list">3. Outsider</h3>
+                        <p class="paragraph-light">
+                            People who interact with the Botanic Garden database by only accessing data.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="content-img" src="../img/projects/botanic_garden/flowchart.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-6-user-goal section-even">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Bear Our Users in Mind</div>
+                <div class="row">
+                    <p class="paragraph-light">
+                        Having constructed three unique User Work Roles and a comprehensive Flow Model based on the data
+                        gathered, we decided to approach analysing the needs and challenges of the project from one
+                        final direction: through User Personas. These were designed to contrast the very specific and
+                        mechanical user work roles, and to essentially get an outside-the-box understanding of the
+                        actual users of the web portal.
+                        ‍<br><br>
+                        The User Personas were quite un-orthodoxically not designed to inform us of specific
+                        requirements and design choices of the final project, but rather to challenge the team to look
+                        at the problem from a more personal and empathetic perspective.
+                    </p>
+                </div>
+                <div class="row">
+                    <div id="myCarousel" class="2-row carousel slide carousel-dark carousel-fade"
+                        style="padding-top: 30px;" data-bs-ride="carousel">
+                        <button class="w-col-1 carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="w-col-10 carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="carousel-img" width="100%" height="100%"
+                                    src="../img/projects/botanic_garden/user_personas_1.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="carousel-img" width="100%" height="100%"
+                                    src="../img/projects/botanic_garden/user_personas_2.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="carousel-img" width="100%" height="100%"
+                                    src="../img/projects/botanic_garden/user_personas_3.jpg">
+                            </div>
+                        </div>
+                        <button class="w-col-1 carousel-control-next" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-7-first-portal-frame section-odd">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Portal Frame</div>
+                <div class="row">
+                    <img class="content-img" src="../img/projects/botanic_garden/portal_frame.png">
+                </div>
+            </div>
+        </div>
+        <div class="section-8-inspriation section-even">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Find Inspirations</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="paragraph-light">
+                            Before producing the sketches and concept designs for the product, we sat down to first
+                            gather inspirations and ideas on a so-called mood board. It proved itself valuable in all
+                            consecutive sketching stages, providing a shared understanding and source of inspiration for
+                            all team members in their individual efforts.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="content-img" src="../img/projects/botanic_garden/moodboard.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-9-hi-fi-diagram section-odd">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Our Scope and Areas of Interest</div>
+                <p class="paragraph-light">
+                    While there are multiple users and stakeholders involved with the Web Portal, and there is limited
+                    time to implement the project, we mainly limited our attention to the user experience of the
+                    <strong>managers</strong> and <strong>general staff</strong>. As the highest priority users of the
+                    web portal, ensuring they have
+                    smooth and seamless experiences with data queries and manipulations, the outsider can also benefit
+                    from this.
+                    <br><br>
+                    To help us visualise and communicate our areas of interest, we sketched storyboards first, which
+                    described and reminded us of the <em>what, when, where and how</em>.
+                </p>
+                <img class="content-img" src="../img/projects/botanic_garden/storyboard.png">
+            </div>
+        </div>
+        <div class="section10-sketches section-even">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Sketches</div>
+                <p class="emphasise" style="padding-bottom: 20px;">
+                    "Design interfaces for a database, instead of designing a database!"
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="paragraph-light">
+                            Our job is to design a web portal to complement the new improved database that the Garden is
+                            developing instead of designing a database itself. Bearing that in mind and considering the
+                            scenarios depicted in storyboards, we applied our ideas and the client’s wishes from the
+                            mood board and user research insights to create concept sketches.
+                            <br><br>
+                            As the client did not need us to come up with a prototype that can be directly delivered to
+                            developers, what he wanted from us is to provide different possibilities to inspire him for
+                            future design and development. Hence, we focused on essential modules, including data
+                            manipulation, message receiving and handling, interactive map and mobile complement, instead
+                            of the whole website.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="content-img" src="../img/projects/botanic_garden/sketches.png">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section11-challenge01 section-odd">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Challenge 01 Data Processing System</div>
+                <div class="goal row">
+                    <div class="col-md-4">
+                        <h2>Goal 01: Highest Permission</h2>
+                        <p class="paragraph-light">
+                            Once managers have logged onto the portal, they have full access to the dataset to search,
+                            insert, delete, and update all data。
+                            <br><br>
+                            The administrator portal and its features are essentially a collection of the most important
+                            features we derived from our analysis.
+                        </p>
+                        <p class="annotation">
+                            *This page has notably been designed as low-fidelity grayscale wireframes to represent
+                            intentions and functionalities rather than colours or detailed visuals.
+                            <br><br>
+                            *Different users have different levels of access, but due to time limitations and priority
+                            considerations, we only prototyped the interface for the full-access manager.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="content-img" src="../img/projects/botanic_garden/challenge1_goal1.png">
+                    </div>
+                </div>
+                <div class="goal row">
+                    <div class="col-md-4">
+                        <h2>Goal 02: Easy Data Manipulation</h2>
+                        <p class="paragraph-light">
+                            The managers can easily select the data they need to use and sort data according to their
+                            requirements with few clicks. The switch button for edit mode could reduce the likelihood of
+                            user misuse of data.
+                            <br><br>
+                            As for adding new data, users no longer have to drag and drop excel tables to check data
+                            column by column. They can fill in the form or import data in bulk.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="content-img" src="../img/projects/botanic_garden/challenge1_goal2.gif">
+                    </div>
+                </div>
+                <div class="goal row">
+                    <div class="col-md-4">
+                        <h2>Goal 03: Request Handling</h2>
+                        <p class="paragraph-light">
+                            The Request option allows the administrator to manage requests sent by other staff members
+                            who do not have permission to edit data directly.
+                            <br><br>
+                            The "Warming" status will alert administrators that there are operations or requests on the
+                            system that do not comply with database security or rules.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="content-img" src="../img/projects/botanic_garden/challenge1_goal3.png">
+                    </div>
+                </div>
+                <div class="goal row">
+                    <h2>Goal 04: No Specific Skills Required</h2>
+                    <p class="paragraph-light">
+                        Prototypes shown above do not need specific skills to use, users can naturally transit from
+                        Excel to current system.
+                        <br><br>
+                        However, we also provide a Script option, allowing a user to load in R or Python scripts to
+                        process the data in a predetermined and automated way. This integration can not only serve
+                        better for high-level users, but also bridge the gap between straightforward functionality
+                        and powerful functionality that was communicated from curator questionnaire responses during
+                        data elicitation.
+                    </p>
+                </div>
+                <div class="goal row">
+                    <h2>Goal 05: Track Data Source</h2>
+                    <p class="paragraph-light">
+                        The Diary option accesses a page of the history of changes made across the system and points
+                        every change to corresponding data operators. This feature came about when exploring how to keep
+                        track of all the minor but possibly impactful daily modifications made in the portal. The notion
+                        is that the feature would relieve the users’ cognitive load and thus aid the overall workflow.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section11-challenge02 section-even">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Challenge 02 A mapping capability to interrogate the database</div>
+                <div class="goal row">
+                    <div class="col-md-4">
+                        <h2>Goal 06: Easy-to-Use Interactive Map</h2>
+                        <p class="paragraph-light">
+                            In this map, plants would not only be locatable on the map, but one could also work with the
+                            data while using the map and hopping between different levels of viewing data seamlessly.
+                            The vivid information card can both benefit offline and online users.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="content-img" src="../img/projects/botanic_garden/challenge2_goal6.gif">
+                    </div>
+                </div>
+                <div class="goal row">
+                    <div class="col-md-4">
+                        <h2>Goal 07: Different Access Level to Data</h2>
+                        <p class="paragraph-light">
+                            The save button above is designed to be a feature for both professional and general users.
+                            It acts as a sort of short-term memory and enhances the ease of use. This idea primarily
+                            arose when we considered the scenario of a remote researcher who doesn't have an authorised
+                            account to download data in bulk searching for multiple plants. This saved tab feature helps
+                            relieve unnecessary cognitive load for any user.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="content-img" src="../img/projects/botanic_garden/challenge2_goal7.png">
+                    </div>
+                </div>
+                <div class="goal row">
+                    <div class="col-md-4">
+                        <h2>Goal 08: Powerful Search Engine</h2>
+                        <p class="paragraph-light">
+                            When a user searches for a particular plant, ambiguous field or plant ID on the web portal,
+                            the results page is reached.
+                            <br><br>
+                            The page contrasts with the more specialised administrator pages above. It is designed to
+                            show an accessible and intuitive mode of browsing search results. It is in line with the
+                            information derived from the analysis of the elicited data, where it became apparent that
+                            visitors and lower-level users need simple but usable interfaces.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="content-img" src="../img/projects/botanic_garden/challenge2_goal8.gif">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section11-challenge03 section-odd">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Challenge 03 Mobile Functionalities</div>
+                <div class="goal row">
+                    <p class="paragraph-light">
+                        Prototypes below showcase interfaces adapted for mobile users of the platform. These are all a
+                        part of our advanced features and are not as such a part of our most basic suggestions. Although
+                        our client mainly expressed their wishes about the web portal, considering the daily work
+                        scenarios of the staff, they are usually in the garden checking plants and updating the data in
+                        the database, designing a responsive webpage with special functions on the mobile would
+                        significantly improve work efficiency.
+                    </p>
+                </div>
+                <div class="goal row">
+                    <div class="col-md-6">
+                        <h2>QR Code</h2>
+                        <p class="paragraph-light">
+                            Conveniently, using a phone’s camera like this is also a very fast method of searching and
+                            can thus be utilised by all user groups. Staff, who have logged in to the system, could scan
+                            QR codes to access and update data, while visitors could scan to explore plants they are
+                            interested in.
+                            ‍<br><br>
+                            The idea for QR codes came from the interviews with the client, where a question that arose
+                            was how to find a plant quickly without typing its long and complicated proper noun.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Image Cognition</h2>
+                        <p class="paragraph-light">
+                            While common and highly convenient, QR code nevertheless comes with the flaw of having to
+                            print out tags for each plant if used.
+                            ‍<br><br>
+                            As a complement method, we came up with the idea of using neural networks and image
+                            recognition to search the database by simply pointing your phone’s camera at a plant. For
+                            implementation, Google Lens already makes such a feat possible and could therefore be
+                            utilised.
+                        </p>
+                    </div>
+                </div>
+                <div class="goal row">
+                    <img class="content-img" src="../img/projects/botanic_garden/mobile.png">
+                </div>
+            </div>
+        </div>
+        <div class="section11-challenge04 section-even">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Challenge 04 Create User Experience for More Than Just Expert Users
+                </div>
+                <div class="goal row">
+                    <h2>The Out-of-Box Idea</h2>
+                    <p class="paragraph-light">
+                        A question the team asked itself during the sketching process was how can we help the general
+                        visitor with little to no experience with plants? While the QR code and image recognition were
+                        possible for mobile users, the team wanted to find something similarly intuitive for desktop
+                        users as well.
+                        <br><br>
+                        We offered our client a possible solution for this. The intuitive search method, an out-of-box
+                        idea that aims to provide inspiration for the client instead of a function that can be developed
+                        right away, is based on visuals rather than scientific attributes. What size of a plant are you
+                        looking for? What colour is it? an choose between different physical attributes of the plant and
+                        as they make their choices, the image cards on the right-hand side update dynamically. The user
+                        can of course click on one of the cards and thus access more information about the plant.
+                    </p>
+                    <img class="content-img" src="../img/projects/botanic_garden/outofbox.png">
+                </div>
+            </div>
+        </div>
+        <div class="section-12-reflection section-odd">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Reflection</div>
+                <p class="paragraph-light paragraph-light-right">
+                    First, I want to thank my teammates as we've done great teamwork together. All of us were keen to
+                    design a prototype that met our client's requirements and exceeded their expectations, and we were
+                    all each other backup.
+                    <br><br>
+                    For me, the whole design process is very fulfilling. I applied what I had learned from the course to
+                    a practical project step by step, turning users' needs and insights we gathered from user searches
+                    into different prototypes. Although this project met the client's needs, it left much desired in
+                    terms of industry perspective. It consists of different modules without a well-established
+                    information architecture and is designed with three different software, and lacked a consistent
+                    design system due to time constraints. It does not mean I will just leave it there but incorporate
+                    them into my future projects.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <div class="border-top"></div>
+    <div class="container" id="content-footer-container"></div>
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    /* line-height: 28px; */
+    font-weight: 400;
+}
+
+main {
+    display: grid;
+    padding: 0;
+    margin: 0;
+}
+
+.contentContainer {
+    display: block;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0px auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: transparent;
+}
+
+.project-title {
+    color: var(--project-theme);
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.project-overview {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--project-theme);
+    font-size: 20px;
+    text-align: center;
+}
+
+.section-even {
+    background-color: #ffffff;
+}
+
+.section-odd {
+    background-color: rgb(243, 243, 243);
+}
+
+.spaceholder {
+    height: 1px;
+    margin: 10px 0;
+}
+
+/* ====================================== */
+/* =============== Layout  ============== */
+
+.h1-section-heading {
+    margin-bottom: 30px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    color: var(--project-theme);
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 500;
+    text-transform: none;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--project-theme);
+}
+
+h2.h2-center {
+    text-align: center;
+}
+
+h3 {
+    color: var(--project-theme);
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h3.h3-center {
+    text-align: center;
+}
+
+h3.h3-list {
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+h4 {
+    color: var(--project-theme);
+    font-size: 16px;
+}
+
+.paragraph-light {
+    display: inline-block;
+    padding-right: 0px;
+    opacity: 1;
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.paragraph-light-left {
+    padding-right: 20px;
+}
+
+.paragraph-light-right {
+
+}
+
+.paragraph-light.center {
+    display: block;
+    text-align: center !important;
+}
+
+.annotation {
+    font-family: 'Open Sans', sans-serif;
+    color: #818181;
+    font-size: 10px;
+    line-height: 15px;   
+}
+
+.hardware .annotation {
+    color: var(--project-theme);
+    text-align: center;
+}
+
+
+.emphasise {
+    display: block;
+    overflow: visible;
+    font-size: 24px;
+    line-height: 40px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+}
+/* ====================================== */
+/* =============== Layout  ============== */
+
+.challenge {
+    margin-top: 100px;
+}
+
+.goal.row {
+    padding-bottom: 30px;
+}
+
+.row-large-gap {
+    margin-bottom: 30px;
+}
+
+.w-col {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.w-col-1 {
+    width: 8.33%;
+}
+
+.w-col-10 {
+    width: 83.33%;
+}
+
+/* ====================================== */
+/* =============== Image  =============== */
+
+.hero-img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.content-img {
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.content-img-shadow {
+    height: 150px;
+    width: 300px;
+    margin: auto;
+    padding-top: 0px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px 0 #000;
+}
+
+.challenge-img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.fifty-img {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ====================================== */
+/* =========== Persona Tabs  ============ */
+
+.nav-item .nav-link.active {
+    color: var(--project-theme);
+}
+
+.nav-item .nav-link {
+    color: #000000;
+}
+
+.tab-content {
+    padding-top: 30px;
+}
+
+.persona {
+    display: flex;
+}
+
+.persona-img {
+    width: 100%;
+}
+
+.persona-name {
+    color: var(--project-theme);
+    text-align: center;
+}
+
+.persona-info {
+    text-align: center;
+    align-items: flex-start;
+}
+
+/* =============================== */
+/* ====== Bootstrap Carousel ===== */
+
+.carousel-inner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-indicators {
+  top: 100%;
+}
+
+/* ============================= */
+/* ====== Body Text Format ===== */
+
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic
+}
+
+.center-text {
+    text-align: center;
+}
+
+.bullet-heading {
+    color: var(--project-theme);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.persona-describe {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid var(--project-theme);
+    border-radius: 10px;
+}
+
+.paint-point-group {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sub-pain-point,
+.pain-point-details {
+    color: #1a1b1f;
+    text-align: center;
+}
+
+
+/* Tablet */
+@media (min-width: 375px) and (max-width: 768px) {
+    .hero-img {
+        width: 100%;
+        height: auto;
+    }
+    .persona-img {
+        max-width: 30%;
+        display: block;
+        margin: 0 auto; 
+    }
+    .challenge {
+        margin-top: 20px;
+    }
+    .challenge-img {
+        max-width: 30%;
+        display: block;
+        margin: 0 auto; 
+        margin-bottom: 50px;        
+    }
+    .fifty-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mobile-mockup-img {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;      
+    }
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+    .hero-img {
+        min-width: 500px;
+    }
+    .persona-img {
+        max-width: 30%;
+        display: block;
+        margin: 0 auto; 
+    }
+    .challenge-img {
+        max-width: 30%;
+        display: block;
+        margin: 0 auto; 
+        margin-bottom: 50px;        
+    }
+    .fifty-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mobile-mockup-img {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+}

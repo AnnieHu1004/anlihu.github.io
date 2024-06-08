@@ -1,0 +1,213 @@
+/* header and navigation */
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    /* line-height: 28px; */
+    font-weight: 400;
+}
+
+header {
+    background-color: white;
+    align-items: center;
+    height: max-content;
+    padding: 0px 0px;
+}
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+/* main body */
+
+.body-container {
+    flex-direction: column;
+    /* max-width: 1440px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contentContainer {
+    display: block;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0px auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: transparent;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.content-img {
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+
+
+/* slogan */
+.text-selfIntro {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-selfIntro p {
+    display: inline-block;
+    font-family: "Sue Ellen Francisco";
+}
+
+.text-selfIntro .name,
+.text-selfIntro .num,
+.text-selfIntro .title {
+    font-size: 36px;
+}
+
+.text-selfIntro .num {
+    color: #FF5C00;
+}
+
+.text-about p {
+    display: flex;
+    flex-direction: column;
+    font-family: "Sue Ellen Francisco";
+    font-size: 36px;
+}
+
+.paragraph-light {
+    display: inline-block;
+    padding-right: 0px;
+    opacity: 1;
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+}
+
+/* button */
+
+button.resume {
+    background-color: #FF5733;
+    border-color: #E41D1D;
+    color: var(--project-theme);
+}
+
+button.resume:hover {
+    background-color: #FF7F33;
+    border-color: #FF5733;
+}
+
+/* icon set */
+
+.logo {
+    width: 36px;
+    height: 36px;
+}
+
+.icon-selfIntro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.icon-selfIntro img {
+    width: 48px;
+}
+
+.icon-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.icon-list li {
+    margin-right: 15px;
+}
+
+.icon-list li i {
+    cursor: pointer;
+}
+
+/* cards */
+
+.projects-container {
+    width: 100%;
+}
+
+.project {
+    max-width: 1080px !important;
+}
+
+.col-md-10 {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.col-md-10.singular {
+    background-color: rgba(237, 233, 233, 0.517);
+}
+
+.col-md-1.singular {
+    background-color: rgba(237, 233, 233, 0.517);
+}
+
+.col-md-10.plural {
+    background-color: rgba(255, 255, 255, 0.517);
+}
+
+.col-md-1.plural {
+    background-color: rgba(255, 255, 255, 0.517);
+}
+
+.project {
+    max-width: 1440px;
+    padding: auto;
+    margin: auto;
+}
+
+.project-content {
+    background-color: white;
+}
+
+/* Tablet */
+
+@media (min-width: 375px) and (max-width: 768px) {
+    .home-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+    .home-img {
+        min-width: 300px;
+    }
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Interactive Hardware</title>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Anli Hu">
+
+    <meta name="robot" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”googlebot” content=”notranslate” />
+
+    <!-- open graph protocol -->
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:img" content="">
+    <meta property="og:url" content="https://">
+    <meta property="og:description" content="">
+    <meta property="site_name" content="Anli Hu">
+    <meta property="locale" content="">
+
+    <!-- reference -->
+    <link rel="icon" href="png">
+    <link rel="icon" href="svg" type="image/svg+xml">
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom styles for bootstraps template -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/project_content.css" rel="stylesheet">
+    <link href="../css/variables.css" rel="stylesheet">
+</head>
+
+<style>
+    :root {
+        /* Overwrite project theme color */
+        /* --project-theme: #ac1b1b; */
+    }
+</style>
+
+<body>
+    <header>
+        <!-- navigation -->
+        <div class="container" id="content-navigation-container"></div>
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    </header>
+
+    <script src="../js/script.js"></script>
+
+    <main>
+        <div class="contentContainer heading">
+            <div class="heading-position">
+                <h1 class="project-title"> Interesting Software and Hardware</h1>
+            </div>
+            <div class="overview-positition">
+                <p class="project-overview">Explore different possibilities for Human-Computer Interaction</p>
+            </div>
+        </div>
+        <div class="section1-kickoff section-odd">
+            <div class="contentContainer">
+                <div class="row">
+                    <p class="paragraph-light">
+                        The projects I have created are a tangible expression of my thinking about creative ways of
+                        interaction. Hopefully, one day they can hit the market, be put into real use or be a part
+                        of amazing future products. I wish you enjoy them. Have fun! 😆
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section2-overview section-even">
+            <div class="contentContainer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="h2-center">01<br>Sign Your Pixels</h2>
+                        <p class="paragraph-light center">A Multi-users Interactive Installation</p>
+                        <img class="content-img" src="../img/projects/interactive_hardware/overview1.png">
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="h2-center">02<br>Netnet</h2>
+                        <p class="paragraph-light center">An Online Journey Recorder</p>
+                        <img class="content-img" src="../img/projects/interactive_hardware/overview2.png">
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="h2-center">03<br>After the Explosion</h2>
+                        <p class="paragraph-light center">A Two-Player Shooting Game</p>
+                        <img class="content-img" src="../img/projects/interactive_hardware/overview3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section3-sign-your-pixels section-odd">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Sign Your Pixels</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            Sign Your Pixels is a public-faced interactive installation. With a motivation to explore a
+                            new relationship between the human and the computer- machines would actively interact with
+                            the public rather than passively wait to be activated, it is designed to allow multiple
+                            users from different places to draw on the same pixel canvas and communicate with each
+                            other.
+                            <br><br>
+                            It could detect whether someone is passing around, and invite users to participate in the
+                            interaction. Users could not only manipulate the canvas and draw pixels with various colours
+                            but also could interact with pixels drawn by other users in the past to create a piece of
+                            artwork together.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="content-img content-img-right"
+                            src="../img/projects/interactive_hardware/sign_your_pixcel.jpg">
+                        <div class="hardware row">
+                            <div class="col-md-4">
+                                <p class="annotation">Hardware: Arduino</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="annotation">Software: P5.js</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="annotation">Code: Java, JS, HTML/CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="paragraph-light center">
+                        <br>
+                        Click the link below to watch the demo video:
+                        <br>
+                        <a href="https://drive.google.com/file/d/12z1X1G0D4f-m9pxTwFTVQcGTtKuqElsL/view"
+                            target="_blank">Here</a>
+                    </p>
+                </div>
+                <div class="row">
+                    <h2>How to Interact with It?</h2>
+                    <h3>Overview</h3>
+                    <p class="paragraph-light">
+                        The figure below shows the ways to interact with the prototype. The ultrasonic sensor is built
+                        upon
+                        a servo so that it could continuously rotate to detect the surrounding conditions (part B of
+                        figure
+                        1). By pressing the history button, users could revisit the history record drawn by other users
+                        (part A). Part C to F shows different functions that users have.
+                    </p>
+                    <img class="content-img" src="../img/projects/interactive_hardware/sign_pixel_interaction.png">
+                    <h3>Details</h3>
+                    <p class="paragraph-light">
+                        Whenever the installation detects someone around the device, it would randomly play a sound that
+                        says, "Hey, come here. Let's create a great creation!". If it detects someone standing in front
+                        of the screen, the camera turns on and activates its face recognition. The interface would
+                        switch
+                        to the painting canvas when a face is detected, and the user can manipulate the hardware to
+                        complete a series of tasks.
+                        <br><br>
+                        Each user has two minutes to paint, and when that time is up, a QR code would be generated on
+                        the left side of the screen, which the user can scan to download their work and track record.
+                        The
+                        pixels drawn by the user cannot be undone but may be overwritten by other users. The user can
+                        return to
+                        the device and continue drawing.
+                    </p>
+                </div>
+                <div class="row">
+                    <h2>Real-world Usage</h2>
+                    <div class="col-md-6">
+                        <p class="paragraph-light">
+                            This interactive installation is expected to be placed in multiple locations on campus or in
+                            different art museums, encouraging active interaction between the machine and the human, and
+                            exploring the possibility of multi-user collaboration in creating art. It can also help
+                            study
+                            users’ mentality since users may choose to return to their nearest installation multiple
+                            times,
+                            especially when they find their work being changed. Currently, this prototype is running on
+                            a
+                            local server; in the future, it will become an online platform that allows multiple users to
+                            paint interactively at different installations. In addition, users who are painting at the
+                            same
+                            time can communicate remotely via camera and work together collaboratively.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="content-img" src="../img/projects/interactive_hardware/overview1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section4-netnet section-even">
+            <div class="contentContainer">
+                <div class="h1-section-heading">Netnet</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            Now people have photos, videos, and maps to record their travels, and they recall or share
+                            their experiences with friends by reviewing these media. However, people barely remember
+                            what they have browsed on the Internet even though they spend hours on it every day.
+                            <br><br>
+                            Hence, with a motivation to explore a new way to record users’ online wanderings and a
+                            uniquely immersive experience of browsing websites, Netnet was created. It is an online
+                            journey recorder, that could map data into different forms, such as colours, sounds and
+                            numbers. Using this designed hardware, users could review their online journeys in a fun and
+                            meaningful way, help them realize the overmuch time they have spent on the Internet and
+                            remind them to turn off their electronic devices to rest.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="content-img content-img-right"
+                            src="../img/projects/interactive_hardware/netnet.jpg">
+                        <div class="hardware row">
+                            <div class="col-md-4">
+                                <p class="annotation">Hardware: Arduino, PC</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="annotation">Software: P5.js</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="annotation">Code: Java, JS, HTML/CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="paragraph-light center">
+                        <br>
+                        Click the link below to watch the demo video:
+                        <br>
+                        <a href="https://drive.google.com/file/d/1LkoB-NKFAdOnpLwcSzNWI8vxmYnvDNhg/view"
+                            target="_blank">Here</a>
+                    </p>
+                </div>
+                <div class="row">
+                    <h2>How to Interact with It?</h2>
+                    <h3>Overview</h3>
+                    <p class="paragraph-light">
+                        The figure below shows the ways to interact with the prototype. Users can stop animations by
+                        hovering over the ultrasonic sensor when they open a new website (parts A). Part B to D shows
+                        different functions that users have in day mode and night mode.
+                    </p>
+                    <img class="content-img" src="../img/projects/interactive_hardware/netnet_interaction.png">
+                    <h3>Details</h3>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4>A. Simulated weather conditions</h4>
+                            <p class="paragraph-light">
+                                This prototype also provides an immersive experience when visiting a website. When users
+                                open a new website, the program could pull weather information about the place where the
+                                website is published and show the corresponding animation, such as raining and snowing.
+                                Users could turn off the animation by simply hovering their hands over the ultrasonic
+                                sensor.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>B. Day mode- record online journeys</h4>
+                            <p class="paragraph-light">
+                                It would automatically record the distances users have scrolled the page and map
+                                distances to a new unit of measurement- 'netmile' to record users’ online journeys and
+                                display the value through LCD. Besides, while users are scrolling the website, the
+                                little man on OLED will start to walk around and it is like a friend accompanying the
+                                user.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>C. Day mode- Rainbow lights</h4>
+                            <p class="paragraph-light">
+                                When users visit a website coming from a new country, it would light up a new light and
+                                make a sound to notify users.
+                                As people tend to have a natural to collect a complete set, it could be satisfying is if
+                                users could light up eight lights in the rainbow colour as they have visited eight
+                                different countries a day.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>D. Night mode</h4>
+                            <p class="paragraph-light">
+                                The night mode is a way to help users control their time using electronic devices. If
+                                the user is still using the electronic device after the break time they set. The
+                                prototype would show red lights to alert users. As time spent using electronic devices
+                                increases, the number of lit lamps will also increase.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2>Real-world Usage</h2>
+                    <div class="col-md-6">
+                        <p class="paragraph-light">
+                            This prototype is expected to be a cheap product that could be sold on the market. Ideally,
+                            it looks like a mini television, and people could buy it and put it on a table or next to
+                            the electronic devices they want to connect with.
+                            <br><br>
+                            It can connect with laptops or smartphones through Bluetooth with more vivid animations and
+                            advanced functions. Users can switch potentiometers to change the time for night mode and
+                            set the speed for animation. Besides, the light sensor could automatically adjust the
+                            brightness of different screens, and the ultrasonic sensor is smaller than the one in the
+                            kit and supports more functions to control the computer, such as taking screenshots.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="content-img" src="../img/projects/interactive_hardware/overview2.png">
+                    </div>
+                    <p class="paragraph-light">
+                        Moreover, this product has a matching application, it allows users to select a certain period
+                        and have an overview of their online journeys on a3D map.
+                    </p>
+                    <div class="col-md-6"><img class="content-img"
+                            src="../img/projects/interactive_hardware/netnet_mockup1.png"></div>
+                    <div class="col-md-6"><img class="content-img"
+                            src="../img/projects/interactive_hardware/netnet_mockup2.png"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section5-explosion section-odd">
+            <div class="contentContainer">
+                <div class="h1-section-heading">After the Explosion</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            After the Explosion is a two-player cooperative shooting game. With a motivation to
+                            explore a new form of shooting beyond the traditional shooting game and design a game
+                            that could enhance the sense of communication and cooperation between players, this game
+                            was born.
+                            <br><br>
+                            It is set in a catastrophic event where players need to find their companions and lead
+                            them to their new homeland after the Earthexplosion. Supported by multiple sensors
+                            provided in the micro: bit, such as accelerometer and touch sensor, players can play
+                            this computer game by manipulating the hardware and engaging themselves in the game
+                            through multi-dimensional outputs and feedback.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="content-img content-img-right"
+                            src="../img/projects/interactive_hardware/explosion.jpg">
+                        <div class="hardware row">
+                            <div class="col-md-4">
+                                <p class="annotation">Hardware: Mirco: bit</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="annotation">Software: Processing</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="annotation">Code: Java, JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="paragraph-light center">
+                        <br>
+                        Click the link below to watch the demo video:
+                        <br>
+                        <a href="https://drive.google.com/file/d/1U8xVU7MphYbNdLEC9vNZh4TiCUP9pzwj/view"
+                            target="_blank">Here</a>
+                    </p>
+                </div>
+                <div class="row">
+                    <h2>Game Roles</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4>A. Avoid attack from Enemies</h4>
+                            <p class="paragraph-light">
+                                The enemy will randomly fire bullets at two players and attack them, reducing the
+                                player's health value by 10 for each attack.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>B. Cooperate with each other</h4>
+                            <p class="paragraph-light">
+                                Players could slowly recover when they are not under attack. Hence, players need to
+                                cover each other as the game can only be won if both players reach their new
+                                homeland alive.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>C. Fire! Fire!</h4>
+                            <p class="paragraph-light">
+                                Different from traditional shooting games, players can fire bullets in any
+                                direction.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>D. Find and call your alliance.</h4>
+                            <p class="paragraph-light">
+                                Players also need to find enough companions so that they can continue to perpetuate
+                                the human civilisation. They can actively seek out their companions, those they find
+                                will follow them around, or they can send out signals to gather more companions to
+                                where they are.
+                            </p>
+                        </div>
+                        <h4>E. Bring your companions to the new homeland</h4>
+                        <p class="paragraph-light">
+                            Finding more companions means they are more vulnerable to enemy attacks. In this case,
+                            there is a trade-off about when and how to find their companions or players can even
+                            sacrifice them to protect themselves from enemy attacks if necessary. When players both
+                            reach the finishing line, they can unlock different game endings depending on the number
+                            of companions they have found.
+                        </p>
+                        <img class="content-img"
+                            src="../img/projects/interactive_hardware/explosion_interaction.jpeg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <div class="border-top"></div>
+    <div class="container" id="content-footer-container"></div>
+</body>
+
+</html>
