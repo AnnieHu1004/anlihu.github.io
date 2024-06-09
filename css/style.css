@@ -160,6 +160,25 @@ button.resume:hover {
     border-radius: 0px;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    flex-grow: 3;
+}
+
+.card:hover {
+    background-color: #ff5e0005;
+    border-color: #FF5C00;
+}
+
+.card:hover .badge-primary {
+    background-color: #FF5C00;
+    color: #ffffff;
+}
+
 .projects-container {
     max-width: 1080px !important;
 }
@@ -167,72 +186,60 @@ button.resume:hover {
 .col-sm-6 {
     padding-bottom: 50px;
     padding-left: 35px;
-    padding-right:35px;
-}
-
-.badge-primary {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #FF5C00;
+    padding-right: 35px;
 }
 
 .badge {
     display: inline-block;
-    padding: .75em .8em;
+    padding: .45em 1.5em;
     margin-right: 10px;
     font-size: 75%;
     font-weight: 700;
     border-radius: .15rem;
 }
 
+.badge-primary {
+    color: #000000;
+    background-color: #ff5e0039;
+    border-width: 1px;
+    /* border-style: solid; */
+    /* border-color: #FF5C00; */
+}
+
 .project-badges {
     display: flex;
+    flex-wrap: wrap;
 }
 
-/* to delete */
-.old-projects-container {
+/* Projects page */
+
+.text-container {
     width: 100%;
+    max-width: 1080px;
+    padding-bottom: 20px;
 }
 
-.project {
-    max-width: 1080px !important;
+.highlighted-text {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    position: relative;
+    display: inline-block;
+    text-transform: none;
+    margin-left: 20px;
 }
 
-.col-md-10 {
-    padding-top: 70px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.col-md-10.singular {
-    background-color: rgba(237, 233, 233, 0.517);
-}
-
-.col-md-1.singular {
-    background-color: rgba(237, 233, 233, 0.517);
-}
-
-.col-md-10.plural {
-    background-color: rgba(255, 255, 255, 0.517);
-}
-
-.col-md-1.plural {
-    background-color: rgba(255, 255, 255, 0.517);
-}
-
-.project {
-    max-width: 1440px;
-    padding: auto;
-    margin: auto;
-}
-
-.project-content {
-    background-color: white;
+.highlighted-text::before {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 10px;
+    right: -10px;
+    bottom: 0;
+    background-color: #f4a261;
+    z-index: -1;
 }
 
 /* Tablet */
-
 @media (min-width: 375px) and (max-width: 768px) {
     .home-img {
         width: 100%;
