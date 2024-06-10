@@ -3,6 +3,10 @@ body {
   padding-bottom: 20px;
 }
 
+.navbar {
+  height: 77px;
+}
+
 .navbar.navbar-expand-lg.navbar-light.bg-light {
   margin-bottom: 20px;
   background-color: rgb(255, 255, 255) !important;
@@ -15,10 +19,9 @@ body {
   color: #1E1E1E;
   font-family: "league gothic";
   font-size: 30px;
-  padding-right: 20px;
 }
 
-.nav-link:focus, 
+.nav-link:focus,
 .nav-link:hover {
   color: #FF5C00 !important;
   text-decoration: underline !important;
@@ -71,4 +74,3 @@ body {
 .navbar.navbar-expand-lg.navbar-light.bg-light {
   background-color: rgb(59, 24, 24);
 }
-

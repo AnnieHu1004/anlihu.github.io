@@ -16,6 +16,7 @@
   <!-- font family -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=League+Gothic" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sue+Ellen+Francisco" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
   <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for bootstraps template -->
@@ -45,122 +46,82 @@
           <p class="title"> Developer</p>
         </div>
       </div>
-      <div class="icon-selfIntro">
-        <ul class="icon-list">
-          <li><i class="bi bi-linkedin"><a>
+      <div class="icon-selfIntro" style="align-items: flex-start; justify-content: flex-start;">
+        <ul class="icon-list" style="padding-inline-start: 0px;">
+          <li><i class="bi bi-linkedin"><a href="https://www.linkedin.com/in/anli-hu/">
                 <img src="img/icon/Linkedin.svg"></a></i></li>
-          <li><i class="bi bi-github"><a>
+          <li><i class="bi bi-github"><a href="https://github.com/AnnieHu1004">
                 <img src="img/icon/GitHub.svg"></a></i></li>
-          <li><i class="bi bi-envelope-fill"><a>
+          <li><i class="bi bi-envelope-fill"><a href="mailto:anniehu1004@gmail.com">
                 <img src="img/icon/Gmail.svg"></a></i></li>
         </ul>
       </div>
-      <div class="projects-container row justify-content-center">
-        <!-- 1st project -->
-        <div class="col-md-1 singular"></div>
-        <div class="col-md-10 singular">
-          <div class="project singular">
-            <div class="project-content singular row g-0 border rounded overflow-hidden = mb-4 shadow-sm">
-              <div class="col p-4">
-                <strong class="d-inline-block mb-2 text-primary">World</strong>
-                <h3 class="mb-0">01 PROJECT: Eatant Mobile</h3>
-                <div class="mb-1 text-muted">Nov 12</div>
-                <p class="card-text mb-auto">This </p>
-                <!-- <a href="content/projects/project_eatant_mobile.html" class="link nav-link">Continue reading</a> -->
-                <a href="content/project_eatant_mobile.html" class="link nav-link">Continue reading</a>
+      <div class="projects-container justify-content-center">
+        <div class="row row-1">
+          <div class="col-sm-6 d-flex">
+            <div class="card" id="project_eatant_mobile">
+              <div class="card-body">
+                <img src="img/projects/eatant_mobile_card.png" class="card-img-top" alt="...">
+                <h5 class="card-title"><b>Eatant · Mobile</b></h5>
+                <div class="col project-badges">
+                  <h6> <span class="badge badge-primary">UX</span></h6>
+                  <h6> <span class="badge badge-primary">UI</span></h6>
+                </div>
+                <p class="card-text">Eatant is a restaurant appointment service that primarily allows users to book
+                  restaurants within...</p>
+                <a href="content/project_eatant_mobile.html" class="stretched-link"></a>
               </div>
-              <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="400" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
-                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                    dy=".3em">Thumbnail</text>
-                </svg>
+            </div>
+          </div>
+          <div class="col-sm-6 d-flex">
+            <div class="card" id="project_eatant_website">
+              <div class="card-body">
+                <img src="img/projects/eatant_website_card.png" class="card-img-top" alt="...">
+                <h5 class="card-title"><b>Eatant · Website</b></h5>
+                <div class="col project-badges">
+                  <h6> <span class="badge badge-primary">UX</span></h6>
+                  <h6> <span class="badge badge-primary">UI</span></h6>
+                </div>
+                <p class="card-text">Except for the mobile application, Eatant also redesigns and improves the booking
+                  process on desktop, tablet...</p>
+                <a href="content/project_eatant_website.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-1 singular"></div>
-      </div>
-      <div class="projects-container row justify-content-center">
-        <!-- 2nd project -->
-        <div class="col-md-1 singular"></div>
-        <div class="col-md-10 singular">
-          <div class="project singular">
-            <div class="project-content singular row g-0 border rounded overflow-hidden = mb-4 shadow-sm">
-              <div class="col p-4">
-                <strong class="d-inline-block mb-2 text-primary">World</strong>
-                <h3 class="mb-0">02 PROJECT: Eatant website</h3>
-                <div class="mb-1 text-muted">Nov 12</div>
-                <p class="card-text mb-auto">This </p>
-                <a href="content/project_eatant_website.html" class="link nav-link">Continue reading</a>
+        <div class="row row-2">
+          <div class="col-sm-6 d-flex">
+            <div class="card" id="project_botanic_garden">
+              <div class="card-body">
+                <img src="img/projects/botanic_garden_card.png" class="card-img-top" alt="...">
+                <h5 class="card-title"><b>Botanic Garden Database</b></h5>
+                <div class="col project-badges">
+                  <h6> <span class="badge badge-primary">User Research</span></h6>
+                  <h6> <span class="badge badge-primary">Interaction Design</span></h6>
+                </div>
+                <p class="card-text">Solutions for users in a range of formats to access St Andrews Botanic Garden's
+                  database with pertinence and efficiency...</p>
+                <a href="content/project_botanic_garden.html" class="stretched-link"></a>
               </div>
-              <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="400" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
-                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                    dy=".3em">Thumbnail</text>
-                </svg>
+            </div>
+          </div>
+          <div class="col-sm-6 d-flex">
+            <div class="card" id="project_hardware">
+              <div class="card-body">
+                <img src="img/projects/interactive_hardware_card.png" class="card-img-top" alt="...">
+                <h5 class="card-title"><b>Interactive Hardware</b></h5>
+                <div class="col project-badges">
+                  <h6> <span class="badge badge-primary">Arduino</span></h6>
+                  <h6> <span class="badge badge-primary">Java</span></h6>
+                  <h6> <span class="badge badge-primary">JavaScript</span></h6>
+                </div>
+                <p class="card-text">Tangible expression of my thinking about creative ways of interaction...</p>
+                <a href="content/project_hardware.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-1 singular"></div>
       </div>
-      <div class="projects-container row justify-content-center">
-        <!-- 3rd project -->
-        <div class="col-md-1 singular"></div>
-        <div class="col-md-10 singular">
-          <div class="project singular">
-            <div class="project-content singular row g-0 border rounded overflow-hidden = mb-4 shadow-sm">
-              <div class="col p-4">
-                <strong class="d-inline-block mb-2 text-primary">World</strong>
-                <h3 class="mb-0">03 PROJECT: Botanic Garden</h3>
-                <div class="mb-1 text-muted">Nov 12</div>
-                <p class="card-text mb-auto">This </p>
-                <a href="content/project_botanic_garden.html" class="link nav-link">Continue reading</a>
-              </div>
-              <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="400" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
-                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                    dy=".3em">Thumbnail</text>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1 singular"></div>
-      </div>
-      <div class="projects-container row justify-content-center">
-        <!-- 4th project -->
-        <div class="col-md-1 singular"></div>
-        <div class="col-md-10 singular">
-          <div class="project singular">
-            <div class="project-content singular row g-0 border rounded overflow-hidden = mb-4 shadow-sm">
-              <div class="col p-4">
-                <strong class="d-inline-block mb-2 text-primary">World</strong>
-                <h3 class="mb-0">04 PROJECT: Hardware</h3>
-                <div class="mb-1 text-muted">Nov 12</div>
-                <p class="card-text mb-auto">This </p>
-                <a href="content/project_hardware.html" class="link nav-link">Continue reading</a>
-              </div>
-              <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="400" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
-                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                    dy=".3em">Thumbnail</text>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1 singular"></div>
-      </div>
-    </div>
   </main>
   <div class="border-top"></div>
 
