@@ -109,19 +109,6 @@ header {
     text-align: left;
 }
 
-/* button */
-
-button.resume {
-    background-color: #FF5733;
-    border-color: #E41D1D;
-    color: var(--project-theme);
-}
-
-button.resume:hover {
-    background-color: #FF7F33;
-    border-color: #FF5733;
-}
-
 /* icon set */
 
 .logo {
@@ -137,7 +124,7 @@ button.resume:hover {
 }
 
 .icon-selfIntro img {
-    width: 48px;
+    width: 24px;
 }
 
 .icon-list {
@@ -146,7 +133,8 @@ button.resume:hover {
 }
 
 .icon-list li {
-    margin-right: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .icon-list li i {
@@ -172,6 +160,12 @@ button.resume:hover {
 .card:hover {
     background-color: #ff5e0005;
     border-color: #FF5C00;
+    cursor: pointer;
+}
+
+.card a.stretched-link {
+    z-index: 1;
+    text-decoration: none;
 }
 
 .card:hover .badge-primary {
@@ -237,6 +231,21 @@ button.resume:hover {
     bottom: 0;
     background-color: #f4a261;
     z-index: -1;
+}
+
+/* about page */
+
+/* button */
+
+button.resume {
+    background-color: #ffffff;
+    border-color: #FF5733;
+    color: #FF5733;
+}
+
+button.resume:hover {
+    background-color: #FF5733;
+    color: white;
 }
 
 /* Tablet */
