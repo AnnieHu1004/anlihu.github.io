@@ -1,20 +1,19 @@
 /* header and navigation */
 body {
-    font-family: Montserrat, sans-serif;
-    font-size: 16px;
-    /* line-height: 28px; */
-    font-weight: 400;
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
 }
 
 header {
-    background-color: white;
+    background-color: var(--primary-bg-color);
     align-items: center;
     height: max-content;
     padding: 0px 0px;
 }
 
 .container {
-    max-width: 1080px;
+    max-width: var(--container-maxwidth);
     margin: auto;
 }
 
@@ -22,7 +21,6 @@ header {
 
 .body-container {
     flex-direction: column;
-    /* max-width: 1440px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +30,7 @@ header {
 .contentContainer {
     display: block;
     width: 100%;
-    max-width: 1080px;
+    max-width: var(--container-maxwidth);
     margin: 0px auto;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -79,32 +77,32 @@ header {
 
 .text-selfIntro p {
     display: inline-block;
-    font-family: "Sue Ellen Francisco";
+    font-family: var(--font-family-intro);
 }
 
 .text-selfIntro .name,
 .text-selfIntro .num,
 .text-selfIntro .title {
-    font-size: 36px;
+    font-size: var(--font-size-Intro);
 }
 
 .text-selfIntro .num {
-    color: #FF5C00;
+    color: var(--primary-highlight-color);
 }
 
 .text-about p {
     display: flex;
     flex-direction: column;
-    font-family: "Sue Ellen Francisco";
-    font-size: 36px;
+    font-family: var(--font-family-intro);
+    font-size: var(--font-size-Intro);
 }
 
 .paragraph-light {
     display: inline-block;
     padding-right: 0px;
     opacity: 1;
-    color: #000;
-    font-size: 16px;
+    color: var(--primary-text-color);
+    font-size: var(--font-size-body);
     line-height: 30px;
     text-align: left;
 }
@@ -112,8 +110,8 @@ header {
 /* icon set */
 
 .logo {
-    width: 36px;
-    height: 36px;
+    width: var(--logo-width);
+    height: var(--logo-height);
 }
 
 .icon-selfIntro {
@@ -158,8 +156,8 @@ header {
 }
 
 .card:hover {
-    background-color: #ff5e0005;
-    border-color: #FF5C00;
+    background-color: var(--secondary-bg-color);
+    border-color: var(--primary-highlight-color);
     cursor: pointer;
 }
 
@@ -169,12 +167,12 @@ header {
 }
 
 .card:hover .badge-primary {
-    background-color: #FF5C00;
-    color: #ffffff;
+    background-color: var(--primary-highlight-color);
+    color: var(--tertiary-text-color);
 }
 
 .projects-container {
-    max-width: 1080px !important;
+    max-width: var(--container-maxwidth) !important;
 }
 
 .col-sm-6 {
@@ -193,11 +191,8 @@ header {
 }
 
 .badge-primary {
-    color: #000000;
-    background-color: #ff5e0039;
-    border-width: 1px;
-    /* border-style: solid; */
-    /* border-color: #FF5C00; */
+    color: var(--primary-text-color);
+    background-color: var(--tertiary-highlight-color);
 }
 
 .project-badges {
@@ -209,13 +204,13 @@ header {
 
 .text-container {
     width: 100%;
-    max-width: 1080px;
+    max-width: var(--container-maxwidth);
     padding-bottom: 20px;
 }
 
 .highlighted-text {
-    font-size: 24px !important;
-    font-weight: 700 !important;
+    font-size: var(--font-size-xlarge) !important;
+    font-weight: var(--font-weight-bold) !important;
     position: relative;
     display: inline-block;
     text-transform: none;
@@ -229,7 +224,7 @@ header {
     left: 10px;
     right: -10px;
     bottom: 0;
-    background-color: #f4a261;
+    background-color: var(--secondary-highlight-color);
     z-index: -1;
 }
 
@@ -238,14 +233,14 @@ header {
 /* button */
 
 button.resume {
-    background-color: #ffffff;
-    border-color: #FF5733;
-    color: #FF5733;
+    background-color: var(--primary-bg-color);
+    border-color: var(--primary-highlight-color);
+    color: var(--primary-highlight-color);
 }
 
 button.resume:hover {
-    background-color: #FF5733;
-    color: white;
+    background-color: var(--primary-highlight-color);
+    color: var(--tertiary-text-color);
 }
 
 /* Tablet */

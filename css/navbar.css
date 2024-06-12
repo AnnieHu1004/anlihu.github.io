@@ -9,27 +9,27 @@ body {
 
 .navbar.navbar-expand-lg.navbar-light.bg-light {
   margin-bottom: 20px;
-  background-color: rgb(255, 255, 255) !important;
+  background-color: var(--primary-bg-color) !important;
 }
 
 .head.nav-item a.nav-link {
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  color: #1E1E1E;
+  color: var(--primary-text-color);
   font-family: "league gothic";
   font-size: 30px;
 }
 
 .nav-link:focus,
 .nav-link:hover {
-  color: #FF5C00 !important;
+  color: var(--primary-highlight-color) !important;
   text-decoration: underline !important;
 }
 
 .offcanvas-title {
-  font-size: 24px;
-  font-family: "Sue Ellen Francisco";
+  font-size: var(--font-size-xlarge);
+  font-family: var(--font-family-intro);
 }
 
 

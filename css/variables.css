@@ -1,3 +1,55 @@
 :root {
-  --project-theme: #272727;
+  --white: #ffffff;
+  --black: #000000;
+
+  --project-theme: #292929;
+  --primary-bg-color: var(--white);
+  --secondary-bg-color: #ff5e0010;
+  /* project background color */
+  --even-section-bg-color: var(--white);
+  --odd-section-bg-color: #f3f3f3;
+  /* highlight color */
+  --primary-highlight-color: #FF5C00;
+  --secondary-highlight-color: #f4a261;
+  --tertiary-highlight-color: #ff5e0030;
+  /* text color */
+  --primary-text-color: #131313;
+  --secondary-text-color: #818181;
+  --tertiary-text-color: var(--white);
+  /* back-to-top button color */
+  --back-to-top-bg-color: #2929293a;
+  --back-to-top-hover-bg-color: #292929;
+  --back-to-top-shadow-color: #0000004d;
+
+  --content-image-shadow: var(--black);
+
+  /* font family */
+  --font-family-body: 'Montserrat', sans-serif;
+  --font-family-annotation: 'Open Sans', sans-serif;
+  --font-family-intro: 'Sue Ellen Francisco';
+  --font-family-nav: 'league gothic';
+
+  --font-size-annotation: 10px;
+  --font-size-small: 12px;
+  --font-size-body: 16px;
+  --font-size-large: 20px;
+  --font-size-xlarge: 24px;
+  --font-size-xxlarge: 32px;
+  --font-size-Intro: 36px;
+  --font-size-projectTitle: 60px;
+
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+
+  /* size */
+  --container-maxwidth: 1080px;
+  --logo-width: 36px;
+  --logo-height: 36px;
 }
