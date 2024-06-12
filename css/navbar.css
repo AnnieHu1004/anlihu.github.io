@@ -17,7 +17,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--primary-text-color);
-  font-family: "league gothic";
+  font-family: var(--font-family-nav);
   font-size: 30px;
 }
 
