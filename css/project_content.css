@@ -23,6 +23,31 @@ main {
     background-color: transparent;
 }
 
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 150px;
+    right: 40px;
+    z-index: 1000;
+    border: none;
+    outline: none;
+    background-color: #2929293a;
+    color: white;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-top:hover {
+    background-color: #292929;
+}
+
 .project-title {
     color: var(--project-theme);
     font-size: 60px;
@@ -114,9 +139,7 @@ h4 {
     padding-right: 20px;
 }
 
-.paragraph-light-right {
-
-}
+.paragraph-light-right {}
 
 .paragraph-light.center {
     display: block;
@@ -127,7 +150,7 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     color: #818181;
     font-size: 10px;
-    line-height: 15px;   
+    line-height: 15px;
 }
 
 .hardware .annotation {
@@ -145,6 +168,7 @@ h4 {
     font-weight: 400;
     text-align: center;
 }
+
 /* ====================================== */
 /* =============== Layout  ============== */
 
@@ -255,7 +279,7 @@ h4 {
 }
 
 .carousel-indicators {
-  top: 100%;
+    top: 100%;
 }
 
 /* ============================= */
@@ -300,6 +324,12 @@ h4 {
     text-align: center;
 }
 
+@media (min-width: 1080px) {
+    .back-to-top {
+        right: calc(50% - 540px + 40px);
+        /* Half of 1080px */
+    }
+}
 
 /* Tablet */
 @media (min-width: 375px) and (max-width: 768px) {
@@ -307,28 +337,33 @@ h4 {
         width: 100%;
         height: auto;
     }
+
     .persona-img {
         max-width: 30%;
         display: block;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
+
     .challenge {
         margin-top: 20px;
     }
+
     .challenge-img {
         max-width: 30%;
         display: block;
-        margin: 0 auto; 
-        margin-bottom: 50px;        
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
+
     .fifty-img {
         margin-left: auto;
         margin-right: auto;
     }
+
     .mobile-mockup-img {
         max-width: 50%;
         margin-left: auto;
-        margin-right: auto;      
+        margin-right: auto;
     }
 }
 
@@ -337,24 +372,28 @@ h4 {
     .hero-img {
         min-width: 500px;
     }
+
     .persona-img {
         max-width: 30%;
         display: block;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
+
     .challenge-img {
         max-width: 30%;
         display: block;
-        margin: 0 auto; 
-        margin-bottom: 50px;        
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
+
     .fifty-img {
         margin-left: auto;
         margin-right: auto;
     }
+
     .mobile-mockup-img {
         max-width: 50%;
         margin-left: auto;
-        margin-right: auto; 
+        margin-right: auto;
     }
 }
