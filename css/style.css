@@ -200,6 +200,63 @@ header {
     flex-wrap: wrap;
 }
 
+/* Recommendation Card */
+
+.recommendationCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 170px;
+    overflow: hidden;
+}
+.recommendationCard img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.recommendationCard-body {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1; /* Number of lines to show */
+    line-clamp: 1; /* Number of lines to show */
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3; /* Initial number of lines to show */
+    line-clamp: 3; /* Initial number of lines to show */
+}
+
+.recommendationCard .tags {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1; /* Number of lines to show */
+    line-clamp: 1; /* Number of lines to show */
+}
+
 /* Projects page */
 
 .text-container {

@@ -58,3 +58,40 @@ function topFunction() {
     document.body.scrollTop = 0; // Safari
     document.documentElement.scrollTop = 0; // Chrome, Firefox, IE and Opera
 }
+
+
+// ================================================
+// ===== Function for edit recommendation card ====
+
+async function fetchArticlesData() {
+    try {
+        const response = await fetch('../js/articlesData.json');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching articles data:', error);
+    }
+}
+
+function updateBadges(badges) {
+    const badgesContainer = document.querySelector('.recommendationCard .project-badges');
+    badgesContainer.innerHTML = ''; // Clear any existing badges
+    badges.forEach(badge => {
+        const badgeElement = document.createElement('span');
+        badgeElement.className = 'badge badge-primary';
+        badgeElement.textContent = badge;
+        badgesContainer.appendChild(badgeElement);
+    });
+}
+
+async function updateCard(articleId) {
+    const articlesData = await fetchArticlesData();
+    if (articlesData && articlesData[articleId]) {
+        const article = articlesData[articleId];
+        document.querySelector('.recommendationCard img').src = article.img;
+        document.querySelector('.recommendationCard .card-title').textContent = article.title;
+        document.querySelector('.recommendationCard .card-text').textContent = article.overview;
+        document.querySelector('.recommendationCard .stretched-link').href = article.link;
+        updateBadges(article.badges);
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "botanic_garden": {
+        "title": "St Andrews Botanic Garden Database Portal",
+        "overview": "Solutions for users in a range of formats to access St Andrews Botanic Garden's database with pertinence and efficiency. With current database management system our client is using, it has limitations in nearly every aspect and is extremely outdated for large datasets. Taking holobint as a core concept, our designed portals aim to provide a platform that can benefit both specialists and the general public to interact with data.",
+        "link": "project_botanic_garden.html",
+        "badges": ["UX", "UI"],
+        "img": "../img/projects/botanic_garden_card.png"
+    },
+    "eatant_mobile": {
+        "title": "Eatant · Mobile",
+        "overview": "Eatant is a restaurant appointment service that primarily allows users to book restaurants within seconds. With current booking applications, the processing of booking is sometimes confusing, jumping from one screen to another. Eatant aims to fix that by redesigning and simplifying the booking process, allowing users to schedule their meal appointments with the most efficiency and effectiveness. It can deliver better restaurant booking experiences, relieve users' cognitive load and make them more likely to use our app instead of others. All of these could contribute in increasing revenue for future work.",
+        "link": "project_eatant_mobile.html",
+        "badges": ["UX", "UI"],
+        "img": "../img/projects/eatant_mobile_card.png"
+    },
+    "eatant_website": {
+        "title": "Eatant · Website",
+        "overview": "Except for a mobile application, Eatant also redesigns and improves the booking process on desktop, tablet and mobile browsers, aiming to provide seamless user experiences across platforms, reach more customers with different accessibilities, and benefit 2B users.",
+        "link": "project_eatant_website.html",
+        "badges": ["User Research", "Interaction Design"],
+        "img": "../img/projects/eatant_website_card.png"
+    },
+    "hardware": {
+        "title": "Software and Hardware",
+        "overview": "a tangible expression of my thinking about creative ways of interaction. Hopefully, one day they can hit the market, be put into real use or be a part of amazing future products. I wish you enjoy them. Have fun!",
+        "link": "project_hardware.html",
+        "badges": ["Arduino", "Java", "JavaScript"],
+        "img": "../img/projects/interactive_hardware_card.png"
+    }
+}
